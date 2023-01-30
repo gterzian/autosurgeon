@@ -10,7 +10,8 @@ repository = "https://github.com/alexjg/autosurgeon"
 readme = "../README.md"
 
 [dependencies]
-automerge = { version = "^0.2" }
+#automerge = { version = "^0.2" }
+automerge = { path = "../../automerge-rs/rust/automerge" }
 thiserror = "1.0.37"
 smol_str = { version = "^0.1.21" }
 autosurgeon-derive = { path = "../autosurgeon-derive", version = "0.2.2" }
@@ -18,7 +19,8 @@ similar = "2.2.1"
 uuid = { version = "1.2.2", optional = true }
 
 [dev-dependencies]
-automerge-test = "^0.1"
+#automerge-test = "^0.1"
+automerge-test = { path = "../../automerge-rs/rust/automerge-test" }
 
 [features]
 uuid = ["dep:uuid"]

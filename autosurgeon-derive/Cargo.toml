@@ -20,5 +20,7 @@ thiserror = "1.0.37"
 
 [dev-dependencies]
 autosurgeon = { path = "../autosurgeon" }
-automerge = { version = "^0.2" }
-automerge-test = "^0.1"
+#automerge = { version = "^0.2" }
+automerge = { path = "../../automerge-rs/rust/automerge" }
+#automerge-test = "^0.1"
+automerge-test = { path = "../../automerge-rs/rust/automerge-test" }
